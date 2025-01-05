@@ -22,3 +22,17 @@ a = 2
 b = 8
 sum = a+b
 print(sum)
+
+# first = int(input("enter first : "))
+# second = int(input("enter second : "))
+
+# print("sum =", first + second)
+
+# side = float(input("enter square side : "))
+
+# print("area =", side * side)
+
+a = int (input("enter first : "))
+b = int (input("enter second :"))
+
+print(a >= b)
