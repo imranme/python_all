@@ -14,12 +14,10 @@
 # else:
 #     print(n2,"That's a small number.")
 
-n1 = int(input("Enter a Number: "))  
-n2 = int(input("Enter another Number: ")) 
+n1 = int(input("Enter a Number 1: "))  
+n2 = int(input("Enter a number 2: ")) 
 
 
-if n1 % 2 == 0 and n2 % 2 == 0:
-    result = n1 + n2
-    print("Both numbers are even. The sum is:", result)
-else:
-    print("At least one of the numbers is not even. Cannot add them.")
+
+result = n1 + n2 
+print(n1,"+", n2, "=", result)
