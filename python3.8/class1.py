@@ -75,24 +75,64 @@
 # print("may country name:",name_country)
 
     # conditions 
-marks = int(input("what is your marks i programming: "))
+# marks = int(input("what is your marks i programming: "))
 
-def show_grade(grade):
-    print(f"You got: {grade}")
+# def show_grade(grade):
+#     print(f"You got: {grade}")
 
-if marks >= 80:
-    show_grade("A+")
-elif marks < 80 and marks >= 70:
-    show_grade("A")
-elif marks < 70 and marks >= 60:
-    show_grade("A-")
-elif marks > 33:
-    show_grade("C")
-else:
-    show_grade("F")
+# if marks >= 80:
+#     show_grade("A+")
+# elif marks < 80 and marks >= 70:
+#     show_grade("A")
+# elif marks < 70 and marks >= 60:
+#     show_grade("A-")
+# elif marks > 33:
+#     show_grade("C")
+# else:
+#     show_grade("F")
 
-print("end")
+# number = int(input("Give a number: "))
+# the_user_is_good = number >= 80
+# message = "The number is greater than or equals 80; " +str(the_user_is_good)
+# print(message)
 
+# a = 330
+# b = 330
+
+# print("A") if a > b else print("=") if a == b else print("B")
+
+
+    #  Eeven or odd 
+def is_even(number):
+    if number % 2 == 0:
+        return True
+    else:
+        return False
+    
+even_number = []
+starting = 0
+user_input = int(input("Limit: "))
+# while starting < user_input:
+#     if is_even(starting):
+#         even_number.append(starting)
+#     #     print(f"{starting} is Even")
+#     # # else:
+#     #     print(f"{starting} is Odd")
+#     starting = starting + 1
+
+for num in range(0, user_input):
+    if is_even(num):
+        even_number.append(num)
+
+print(f"Even umber: {even_number}")
+print("End")
+    
+grocery_list = ["rice", "potato", "tomato"]
+
+for item in grocery_list:
+    if item == "potato":
+        break
+    print(ite)
 
 
 
