@@ -50,23 +50,54 @@
 
         # list 
 
-grocery_list = ["rice", "potato", "tomato"]
-l2 = list()
-secod_item = grocery_list[1]
-print(grocery_list)
-print(secod_item)
-grocery_list.append("water")
+# grocery_list = ["rice", "potato", "tomato"]
+# l2 = list()
+# secod_item = grocery_list[1]
+# print(grocery_list)
+# print(secod_item)
+# grocery_list.append("water")
 
-print(grocery_list)
-print(l2)
-l2.append(3)
-print(l2)
-l2.append("computer")
-print(l2)
-print(grocery_list[-1]) # it's a chek last umber of list python, (-1 = 3) is a same index number
+# print(grocery_list)
+# print(l2)
+# l2.append(3)
+# print(l2)
+# l2.append("computer")
+# print(l2)
+# print(grocery_list[-1]) # it's a chek last umber of list python, (-1 = 3) is a same index number
 
 
-number_list = [1,90,34,23,77,21,12,67,89,44,50] 
-number_list.sort() # sort the list
-print(number_list)
+# number_list = [1,90,34,23,77,21,12,67,89,44,50] 
+# number_list.sort() # sort the list
+# print(number_list)
+
+    # input / Output python 
+# name_country = input("Give me your country name: ")
+# print("may country name:",name_country)
+
+    # conditions 
+marks = int(input("what is your marks i programming: "))
+
+def show_grade(grade):
+    print(f"You got: {grade}")
+
+if marks >= 80:
+    show_grade("A+")
+elif marks < 80 and marks >= 70:
+    show_grade("A")
+elif marks < 70 and marks >= 60:
+    show_grade("A-")
+elif marks > 33:
+    show_grade("C")
+else:
+    show_grade("F")
+
+print("end")
+
+
+
+
+
+
+
+
 
