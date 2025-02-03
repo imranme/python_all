@@ -136,24 +136,49 @@
 
     # File Io 
 
-with open("/home/tushar/python_all/python3.8/python.txt", mode="r") as s_file:
-    words_all = []
-    for line in s_file.readlines():
-        words = line.strip(" ")
-        words_all += words
-    unique_words = set(words_all)
-    print(len(words_all))
-    print(len(unique_words))
+# with open("/home/tushar/python_all/python3.8/python.txt", mode="r") as s_file:
+#     words_all = []
+#     for line in s_file.readlines():
+#         words = line.strip(" ")
+#         words_all += words
+#     unique_words = set(words_all)
+#     print(len(words_all))
+#     print(len(unique_words))
 
-    with open("unique_words.text", mode="w") as write_file:
-        for item in sorted(unique_words):
-            write_file.write(item)
-            write_file.write("\n")
+#     with open("unique_words.text", mode="w") as write_file:
+#         for item in sorted(unique_words):
+#             write_file.write(item)
+#             write_file.write("\n")
 
-print("End program")
+# print("End program")
 
 
+        # debugging 
 
+# '{2}, {1}, {0}'.format('a', 'b', 'c')
+# 'c, b, a'
+# '{0}{1}{0}'.format('abra', 'cad')
+# 'abracadabra'
+
+message = "If x = {x} and y = {y}, then x+y = {z}".format(x = 20, y = 300, z = 20+300)
+
+print(message)
+
+
+if 10 > 5:
+    print("10 greater than 5") # এই স্টেটমেন্টটি if কন্ডিশনের এর আওতাভুক্ত
+    print("IF scope finished")    # এই স্টেটমেন্টটিও if কন্ডিশনের এর আওতাভুক্ত
+
+print("Program ended") # এই স্টেটমেন্টটি if কন্ডিশনের এর আওতাভুক্ত নয়
+
+
+    # নেস্টেড if 
+
+num = 12
+if num > 5:
+    print("Bigger than 5")
+    if num <= 47:
+        print("Between 6 and 47")
 
 
 
