@@ -103,38 +103,54 @@
 
 
     #  Eeven or odd 
-def is_even(number):
-    if number % 2 == 0:
-        return True
-    else:
-        return False
+# def is_even(number):
+#     if number % 2 == 0:
+#         return True
+#     else:
+#         return False
     
-even_number = []
-starting = 0
-user_input = int(input("Limit: "))
-# while starting < user_input:
-#     if is_even(starting):
-#         even_number.append(starting)
-#     #     print(f"{starting} is Even")
-#     # # else:
-#     #     print(f"{starting} is Odd")
-#     starting = starting + 1
+# even_number = []
+# starting = 0
+# user_input = int(input("Limit: "))
+# # while starting < user_input:
+# #     if is_even(starting):
+# #         even_number.append(starting)
+# #     #     print(f"{starting} is Even")
+# #     # # else:
+# #     #     print(f"{starting} is Odd")
+# #     starting = starting + 1
 
-for num in range(0, user_input):
-    if is_even(num):
-        even_number.append(num)
+# for num in range(0, user_input):
+#     if is_even(num):
+#         even_number.append(num)
 
-print(f"Even umber: {even_number}")
-print("End")
+# print(f"Even umber: {even_number}")
+# print("End")
     
-grocery_list = ["rice", "potato", "tomato"]
+# grocery_list = ["rice", "potato", "tomato"]
 
-for item in grocery_list:
-    if item == "potato":
-        break
-    print(ite)
+# for item in grocery_list:
+#     if item == "potato":
+#         break
+#     print(item)
 
+    # File Io 
 
+with open("/home/tushar/python_all/python3.8/python.txt", mode="r") as s_file:
+    words_all = []
+    for line in s_file.readlines():
+        words = line.strip(" ")
+        words_all += words
+    unique_words = set(words_all)
+    print(len(words_all))
+    print(len(unique_words))
+
+    with open("unique_words.text", mode="w") as write_file:
+        for item in sorted(unique_words):
+            write_file.write(item)
+            write_file.write("\n")
+
+print("End program")
 
 
 
