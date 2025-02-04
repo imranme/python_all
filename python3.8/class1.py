@@ -174,11 +174,26 @@ print("Program ended") # এই স্টেটমেন্টটি if কন�
 
     # নেস্টেড if 
 
-num = 12
-if num > 5:
-    print("Bigger than 5")
-    if num <= 47:
-        print("Between 6 and 47")
+# num = 12
+# if num > 5:
+#     print("Bigger than 5")
+#     if num <= 47:
+#         print("Between 6 and 47")
 
+
+words = ["Hello", "world", "!"]
+print(words[0])
+print(words[1])
+print(words[2])
+
+number = 1
+my_numbers = [number, 2, 3]
+
+things = ["Numbers", 0, my_numbers, 4.56]
+
+print(things[0])
+print(things[1])
+print(things[2])
+print(things[2][2])
 
 
