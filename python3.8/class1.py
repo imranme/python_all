@@ -196,4 +196,34 @@ print(things[1])
 print(things[2])
 print(things[2][2])
 
+def my_func(x = None):
+    if x:
+        return x * x
+    else:
+        return 0
 
+print(my_func())
+print(my_func(5))
+
+permissions = (("Admin", "Operator", "Customer"), ("Developer", "Tester"), [1, 2, 3], {"Stage": "Development"})
+
+print(permissions[3]["Stage"])
+
+    # tapoll unpacking
+
+numbers = (1, 2, 3)
+a, b, c = numbers
+print(a)
+print(b)
+print(c)
+
+
+a, b, *c, d = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(a)
+print(b)
+print(c)
+print(d)
+
+
+squares = [1, 2, 5, 0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 4, 6, 7, 8]
+print(squares[3:-4])
