@@ -160,16 +160,16 @@
 # '{0}{1}{0}'.format('abra', 'cad')
 # 'abracadabra'
 
-message = "If x = {x} and y = {y}, then x+y = {z}".format(x = 20, y = 300, z = 20+300)
+# message = "If x = {x} and y = {y}, then x+y = {z}".format(x = 20, y = 300, z = 20+300)
 
-print(message)
+# print(message)
 
 
-if 10 > 5:
-    print("10 greater than 5") # এই স্টেটমেন্টটি if কন্ডিশনের এর আওতাভুক্ত
-    print("IF scope finished")    # এই স্টেটমেন্টটিও if কন্ডিশনের এর আওতাভুক্ত
+# if 10 > 5:
+#     print("10 greater than 5") # এই স্টেটমেন্টটি if কন্ডিশনের এর আওতাভুক্ত
+#     print("IF scope finished")    # এই স্টেটমেন্টটিও if কন্ডিশনের এর আওতাভুক্ত
 
-print("Program ended") # এই স্টেটমেন্টটি if কন্ডিশনের এর আওতাভুক্ত নয়
+# print("Program ended") # এই স্টেটমেন্টটি if কন্ডিশনের এর আওতাভুক্ত নয়
 
 
     # নেস্টেড if 
@@ -181,49 +181,58 @@ print("Program ended") # এই স্টেটমেন্টটি if কন�
 #         print("Between 6 and 47")
 
 
-words = ["Hello", "world", "!"]
-print(words[0])
-print(words[1])
-print(words[2])
+# words = ["Hello", "world", "!"]
+# print(words[0])
+# print(words[1])
+# print(words[2])
 
-number = 1
-my_numbers = [number, 2, 3]
+# number = 1
+# my_numbers = [number, 2, 3]
 
-things = ["Numbers", 0, my_numbers, 4.56]
+# things = ["Numbers", 0, my_numbers, 4.56]
 
-print(things[0])
-print(things[1])
-print(things[2])
-print(things[2][2])
+# print(things[0])
+# print(things[1])
+# print(things[2])
+# print(things[2][2])
 
-def my_func(x = None):
-    if x:
-        return x * x
-    else:
-        return 0
+# def my_func(x = None):
+#     if x:
+#         return x * x
+#     else:
+#         return 0
 
-print(my_func())
-print(my_func(5))
+# print(my_func())
+# print(my_func(5))
 
-permissions = (("Admin", "Operator", "Customer"), ("Developer", "Tester"), [1, 2, 3], {"Stage": "Development"})
+# permissions = (("Admin", "Operator", "Customer"), ("Developer", "Tester"), [1, 2, 3], {"Stage": "Development"})
 
-print(permissions[3]["Stage"])
+# print(permissions[3]["Stage"])
 
-    # tapoll unpacking
+#     # tapoll unpacking
 
-numbers = (1, 2, 3)
-a, b, c = numbers
-print(a)
-print(b)
-print(c)
-
-
-a, b, *c, d = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-print(a)
-print(b)
-print(c)
-print(d)
+# numbers = (1, 2, 3)
+# a, b, c = numbers
+# print(a)
+# print(b)
+# print(c)
 
 
-squares = [1, 2, 5, 0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 4, 6, 7, 8]
-print(squares[3:-4])
+# a, b, *c, d = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# print(a)
+# print(b)
+# print(c)
+# print(d)
+
+
+# squares = [1, 2, 5, 0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 4, 6, 7, 8]
+# print(squares[3:-4])
+
+
+def make_sum(*args):
+    sum = 0
+    for num in args: # Here, args is like a Tuple which is (10, 20, 30, 40)
+        sum += num
+    return sum
+
+print(make_sum(10, 20, 30, 40))
