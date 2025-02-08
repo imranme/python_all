@@ -22,3 +22,12 @@ def add_numbers(x, y):
        
 
 print(add_numbers(4, 5))
+
+
+# এক্সেপশন 
+
+a = 2500
+b = 0
+
+print(a/b)
+print("I did it")
