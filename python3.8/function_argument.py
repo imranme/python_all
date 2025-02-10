@@ -65,3 +65,30 @@ except ZeroDivisionError:
    print("Divided by zero")
 finally:
    print("This code will run no matter what")
+
+
+ print("Hello")
+raise NameError('HiThere')
+
+
+print(1)
+assert 2 + 2 == 4
+print(2)
+assert 1 + 1 == 3
+print(3)
+
+
+def KelvinToFahrenheit(Temperature):
+   assert (Temperature >= 0),"Colder than absolute zero!"
+   return ((Temperature-273)*1.8)+32
+
+print(KelvinToFahrenheit(273))
+print(int(KelvinToFahrenheit(505.78)))
+print(KelvinToFahrenheit(-5))
+
+file_to_work = open("filename.txt", "w")
+# do HERE whatever you like, with the file
+# such as write new lines in it
+
+# then close it
+file_to_work.close()
