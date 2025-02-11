@@ -92,3 +92,25 @@ file_to_work = open("filename.txt", "w")
 
 # then close it
 file_to_work.close()
+
+
+file_to_work = open("Test.txt", "r")
+
+just_one_character = file_to_work.read(1)
+print(just_one_character)
+
+remaining_four_characters = file_to_work.read(4)
+print(remaining_four_characters)
+
+rest_of_the_file = file_to_work.read()
+print(rest_of_the_file)
+
+file_to_work.close()
+
+
+file_to_work = open("Test.txt", "r")
+
+lines = file_to_work.readlines()
+print(lines)
+
+file_to_work.close()
