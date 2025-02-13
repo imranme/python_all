@@ -35,11 +35,25 @@
 # # Display the sum
 # print("The sum of all numbers is:", total_sum)
 
-n = int(input("Enter a number: "))  
-total_sum = 0  
-for i in range(1, n, 2):
-    total_sum += i  
+# n = int(input("Enter a number: "))  
+# total_sum = 0  
+# for i in range(1, n, 2):
+#     total_sum += i  
 
-print("The sum of numbers from 1 to", n, "is:", total_sum)
+# print("The sum of numbers from 1 to", n, "is:", total_sum)
+
+
+# s = 0
+# k = 1
+
+# while k <= 20:
+#     s = s + k
+#     k = k + 1
+# print(s)
+
+
+
+
+
 
 
