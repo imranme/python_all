@@ -86,3 +86,10 @@ def make_line(func, words):
 
 print(make_line(beautify, "world"))
 
+try:
+    a = 1000
+    b = int(input("Enter a divisor to divide 1000: "))
+    print(a/b)
+except ZeroDivisionError:
+    print("You entered 0 which is not permitted!")
+
