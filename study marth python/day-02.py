@@ -25,3 +25,10 @@ def func1():
     print('My num is: ', x)
 func1()
 print('My num is: ',x)
+
+y = 1000
+def func2():
+    t=100
+    print('My Num is: ', y)
+func2()
+print('My num is:', y)
