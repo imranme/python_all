@@ -113,3 +113,8 @@ print(type(x))
 s = {1,2,3,5}
 print(s)
 print(type(s))
+
+# sequence Data 
+
+# list 
+l = 
