@@ -57,64 +57,68 @@
 # print(type(l))
 # print(isinstance(l,list))
 
-    #Tuple
-t = (1,5,8,9,'ai')
-print(t)
-print(type(t))
-print(t[0])
-print(t[0:4]) #colon means to; 0 to 4-1
+#     #Tuple
+# t = (1,5,8,9,'ai')
+# print(t)
+# print(type(t))
+# print(t[0])
+# print(t[0:4]) #colon means to; 0 to 4-1
 
- #Range()
+#  #Range()
 
-x = range(10) #1st case
-print(x)
-for i in x:
-    print(i)
+# x = range(10) #1st case
+# print(x)
+# for i in x:
+#     print(i)
 
 
     
 
-x = range(5, 20, 3)
-for i in x:
-    print(i)
+# x = range(5, 20, 3)
+# for i in x:
+#     print(i)
 
 
-x = range(20,5,-3) #4th case
-for i in x:
-    print(i)
+# x = range(20,5,-3) #4th case
+# for i in x:
+#     print(i)
 
 
-#array
-import array as ar
+# #array
+# import array as ar
 
 
 
-a = ar.array('i',[1,2,3,4])
-print(a)
-print(type(a))
+# a = ar.array('i',[1,2,3,4])
+# print(a)
+# print(type(a))
 
-a = ar.array('f',[1.5,2,3,4])
-print(a)
+# a = ar.array('f',[1.5,2,3,4])
+# print(a)
 
 
-#string
-x = 'data'
-print(type(x))
+# #string
+# x = 'data'
+# print(type(x))
 
-x = '''
-I love
-Data Science
-'''
-print(x)
-print(type(x))
+# x = '''
+# I love
+# Data Science
+# '''
+# print(x)
+# print(type(x))
 
-#Set
+# #Set
 
-s = {1,2,3,5}
-print(s)
-print(type(s))
+# s = {1,2,3,5}
+# print(s)
+# print(type(s))
 
-# sequence Data 
+# dictonary
 
-# list 
-l = 
+dic={
+    'varcity': 'Manarat Internactional Univarcity',
+    'Dept': 'Computer science'
+}
+
+print(dic)
