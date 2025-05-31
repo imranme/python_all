@@ -131,3 +131,41 @@ print(dic)
 17 % 3  # the % operator returns the remainder of the division
 
 5 * 3 + 2  # floored quotient * divisor + remainder
+
+# recupe data type
+
+x = 1    # int
+y = 2.8  # float
+z = 1j   # complex
+
+print(type(x))
+print(type(y))
+print(type(z))
+
+
+x = 1
+y = 35656222554887711
+z = -3255522
+
+print(type(x))
+print(type(y))
+print(type(z))
+
+
+x = 1.10
+y = 1.0
+z = -35.59
+
+print(type(x))
+print(type(y))
+print(type(z))
+
+Complex:
+
+x = 3+5j
+y = 5j
+z = -5j
+
+print(type(x))
+print(type(y))
+print(type(z))
