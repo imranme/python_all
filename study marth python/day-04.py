@@ -71,10 +71,13 @@
 # for i in x:
 #     print(i)
 
-
+ #x = range(10,20) #2nd case
+# print(x)
+# for i in x:
+#     print(i)
     
 
-# x = range(5, 20, 3)
+# x = range(5, 20, 3) #thard  case
 # for i in x:
 #     print(i)
 
