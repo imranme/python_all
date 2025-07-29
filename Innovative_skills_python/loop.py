@@ -117,6 +117,14 @@ if sum == int(given_number):
 else:
     print("The given number",given_number,"is Not an Amstrong number.")
 
+sum_odd = 0
+sum_even  = 0
 
-for i in range(5):
-    print(i)
+for i in range(1, 11):
+    if(i%2 == 1):
+        sum_odd = sum_odd +i
+    else:
+        sum_even = sum_even +i
+
+print("the sum of all odd numbers: ", sum_odd)
+print('the sum od all even number: ', sum_even)
