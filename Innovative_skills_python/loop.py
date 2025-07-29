@@ -116,3 +116,7 @@ if sum == int(given_number):
 # its an amstrong number
 else:
     print("The given number",given_number,"is Not an Amstrong number.")
+
+
+for i in range(5):
+    print(i)
