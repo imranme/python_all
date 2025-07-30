@@ -9,3 +9,11 @@ total_price_chicken_meat = chicken_meat_price * quantity_chicken_meat
 
 print("The total price of beef meat: ", total_price_beef_meat)
 print("The total price of Chicken meat: ",)
+
+
+a = True
+b = False
+print(a and b)  # False
+print(a or b)   # True
+print(not a)    # False
+
