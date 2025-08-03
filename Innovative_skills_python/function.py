@@ -128,12 +128,25 @@ for number in count_down(5):
 
 
 
+# lambda arguments : expression
+
+add = lambda a, b: a + b
+print(add(5, 3))   # Output: 8
+
+
+square = lambda x: x * x
+print(square(4))   # Output: 16
 
 
 
+points = [(1, 2), (4, 1), (3, 5), (2, 0)]
+points_sorted = sorted(points, key=lambda x: x[1])
+print(points_sorted)
 
 
-
+nums = [1, 2, 3, 4, 5, 6]
+even = list(filter(lambda x: x % 2 == 0, nums))
+print(even)  # Output: [2, 4, 6]
 
 
 
