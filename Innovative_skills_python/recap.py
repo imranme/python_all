@@ -122,3 +122,92 @@ print(logical_result)  # False
 # অপারেটর হলো সেই চিহ্ন বা প্রতীক যা ভেরিয়েবল বা মানের মধ্যে বিভিন্ন ধরনের কাজ সম্পন্ন করে।
 # এক্সপ্রেশন হলো অপারেটর ও অপারেন্ডের সমন্বয়ে গঠিত, যা একটি নির্দিষ্ট মান বা ফলাফল প্রদান করে।
 
+a = 5  # 0101 in binary
+b = 3  # 0011 in binary
+
+# AND
+print("AND:", a & b)    # Output: 1 (0001 in binary)
+
+# OR
+print("OR:", a | b)     # Output: 7 (0111 in binary)
+
+# XOR
+print("XOR:", a ^ b)    # Output: 6 (0110 in binary)
+
+# NOT
+print("NOT:", ~a)       # Output: -6 (in two's complement, 1010 in binary)
+
+# Left Shift
+print("Left Shift:", a << 1)  # Output: 10 (1010 in binary)
+
+# Right Shift
+print("Right Shift:", a >> 1) # Output: 2 (0010 in binary)
+
+
+# সংক্ষেপে (Python Control Statements):
+
+# Conditional Statements – শর্ত অনুযায়ী কোড চালানো
+
+# if → শর্ত সত্য হলে কোড চালায়
+
+# elif → আগের শর্ত মিথ্যা হলে নতুন শর্ত পরীক্ষা
+
+# else → সব শর্ত মিথ্যা হলে চালায়
+
+# Looping Statements – কোড বারবার চালানো
+
+# for → নির্দিষ্ট সংখ্যা বা iterable এর উপাদান নিয়ে লুপ
+
+# while → শর্ত সত্য থাকলে চলতে থাকে
+
+# Jump Statements – লুপের প্রবাহ নিয়ন্ত্রণ
+
+# break → লুপ সাথে সাথে বন্ধ
+
+# continue → বর্তমান ইটারেশন বাদ দিয়ে পরেরটিতে যায়
+
+# pass → কিছুই করে না, শুধু প্লেসহোল্ডার
+
+# এগুলো প্রোগ্রামের প্রবাহ নিয়ন্ত্রণের মূল ভিত্তি।
+
+# Conditional Statments 
+
+# Conditional Statements
+age = 17
+if age >= 18:
+    print("You are eligible to vote.")
+elif age >= 16:
+    print("You can vote in school elections.")
+else:
+    print("You are not eligible to vote.")
+
+print("\n--- Looping and Jump Statements ---")
+
+# Looping with for loop
+for i in range(1, 6):
+    if i == 3:
+        continue  # ৩ স্কিপ করবে
+    if i == 5:
+        break     # ৫ এ থেমে যাবে
+    print("Number:", i)
+
+# While loop with pass
+count = 0
+while count < 5:
+    if count == 2:
+        pass  # কিছু করবে না, শুধু প্লেসহোল্ডার
+    print("Count:", count)
+    count += 1
+
+
+while condition:
+
+count  = 1
+while count <= 5:
+    print(count)
+    count += 1
+
+user_input = " "
+while user_input != "stop"
+    user_input = input("Enter sommething(type 'sotp' to exit): ")
+    print("You entered:", user_input)
