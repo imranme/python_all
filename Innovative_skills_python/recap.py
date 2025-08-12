@@ -274,3 +274,11 @@ print(student)           # আউটপুট: {'name': 'Alice', 'age': 21, 'gra
 # সেট: অনন্য মান সমর্থন করে এবং অর্ডারলেস।
 # ডিকশনারি: কী-ভ্যালু জোড়া আকারে ডেটা সংরক্ষণ করে এবং দ্রুত অ্যাক্সেসের জন্য ব্যবহৃত হয়।
 # এই ডেটা স্ট্রাকচারগুলো পাইথনে ডেটা সংরক্ষণ ও সংগঠিত করতে গুরুত্বপূর্ণ ভূমিকা পালন করে।
+
+# list comprehenction 
+
+# new_list = [expression for item in iterable if condition]
+
+# normal list comprehencsion
+numbers = [x for x in range(1, 11)]
+print(numbers)
