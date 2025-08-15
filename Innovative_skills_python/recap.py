@@ -282,3 +282,31 @@ print(student)           # আউটপুট: {'name': 'Alice', 'age': 21, 'gra
 # normal list comprehencsion
 numbers = [x for x in range(1, 11)]
 print(numbers)
+
+# function
+def hello():
+    print("Hello world!")
+hello()
+
+# Defining the function named hello
+def hello():
+    print("Hello World!")
+
+# Calling the function to use it
+hello()
+
+#Again calling the function
+hello()
+
+#calling the function to use it 
+hi()
+
+#Defining the function named hi
+def hi():
+    print("hi")
+
+# function argument
+def show_double(x):
+    print(x*2)
+show_double(2)
+show_double(100)
