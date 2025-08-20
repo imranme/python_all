@@ -15,6 +15,7 @@
 # class কিওয়ার্ড ব্যবহার করে পাইথনে ক্লাস তৈরি করা হয়, একটি ক্লাসের মধ্যে বিভিন্ন মেথড(ফাংশন) এবং অ্যাট্রিবিউট (প্রপার্টি) থাকতে পারে যেগুলো পাইথনের নিয়ম অনুযায়ী ইন্ডেন্টেড ব্লকের মধ্যে থাকে।
 
 #The blueprint to create monsters
+
 class Monster:
     def __init__(self, color, heads):
         self.color = color
@@ -69,3 +70,21 @@ mournsnake = Monster("Yellow", 4)
 print('I am a ' + str(mournsnake.heads) + ' headed monster.')
 # Make an attack by the new monster
 mournsnake.attack()
+
+
+class Monster:
+    identity = "negative character"
+
+    def __init__(self, color, heads):
+        self.color = color
+        self.heads = heads
+
+    def attack(self):
+        print("Just attacked a Hero, Mu...hahahaha!!!")
+
+
+mournsnake = Monster("Yellow", 4)
+tangleface = Monster("Red", 3)
+
+print('I am a ' + str(mournsnake.heads) + ' headed ' + mournsnake.identity)
+print('I am a ' + str(tangleface.heads) + ' headed ' + tangleface.identity)
