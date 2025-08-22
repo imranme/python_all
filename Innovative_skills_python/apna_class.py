@@ -90,3 +90,24 @@ class Student:
 s1 = Student("Tushar", 24)
 s1.welcome()
 print(s1.get_age())
+
+class Student:
+    univercity_name = "Manarat International Univercity" 
+
+    def __init__(self, name, age):
+        self.name = name 
+        self.age = age
+
+    def welcome(self):
+        print("welcome stident,",self.name)
+    
+    def get_age(self):
+        return self.age  
+      
+s1 = Student("Tushar", 24)
+s1.welcome()
+print(s1.get_age())
+
+s2 = Student("Tushar imran", 24)
+s2.welcome()
+print(s2.get_age())
