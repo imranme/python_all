@@ -141,3 +141,33 @@ s1.hello()
 
 s1.name = "khan"
 s1.get_avg()
+
+# let's practice 
+
+# create Account class with 2 attributes - balance & account no.
+# create method for debit , credit & printing the balance.
+
+class Account:
+    def __init__(self, blance, account):
+        self.blance = blance
+        self.account = account
+    #debit method
+    def debit(self, amount):
+        self.blance -= amount
+        print("TK.", amount, "was debited")
+        print("total balance = ", self.get_balance())
+    
+    def credit(self, amount):
+        self.blance += amount
+        print("TK.", amount, "was credited")
+        print("total balance = ", self.get_balance())
+
+    def get_balance(self):
+        return self.blance
+    
+
+acc1 = Account(100000, 1234)
+acc1.debit(2000)
+acc1.credit(1000)
+acc1.credit(200003)
+acc1.debit(1999)
