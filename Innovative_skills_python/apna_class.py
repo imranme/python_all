@@ -97,6 +97,11 @@ class Student:
     def __init__(self, name, age):
         self.name = name 
         self.age = age
+    
+    # class student:
+    #     @staticmethod
+    #     def college():
+    #         print("Hello Tushar")
 
     def welcome(self):
         print("welcome stident,",self.name)
@@ -105,9 +110,34 @@ class Student:
         return self.age  
       
 s1 = Student("Tushar", 24)
-s1.welcome()
 print(s1.get_age())
 
-s2 = Student("Tushar imran", 24)
-s2.welcome()
-print(s2.get_age())
+s1.name = "imran"
+s1.welcome()
+
+
+
+# s2 = Student("Tushar imran", 24)
+# s2.welcome()
+# print(s2.get_age())  
+
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+    
+    @staticmethod #decorator
+    def hello():
+        print("hello")
+
+    def get_avg(self):
+        sum = 0 
+        for val in self.marks:
+            sum += val
+        print("hi", self.name, "your avg score is:", sum/3)
+s1 = Student("tony strk", [99, 98, 97])
+s1.get_avg()
+s1.hello()
+
+s1.name = "khan"
+s1.get_avg()
