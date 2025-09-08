@@ -15,11 +15,11 @@ class Student:
 
     def enroll(self, course):
         self.courses.append(course)
-        
+
     def view_couress(self):
         return self.courses
     
 s1 = Student("tushar", 101)
 s1.enroll("Python")
 s1.enroll("OOP")
-print("tushar courses:", s1.view_couress)
+print("tushar courses:", s1.view_couress())
