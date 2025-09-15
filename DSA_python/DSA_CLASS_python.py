@@ -45,3 +45,11 @@ person1 = Person("Alamgir", "Hossain", "male", "Ramna Thana")
 
 # মেথড কল
 person1.describe_user()
+
+person2 = Person('khan', 'imran', 'male', 'mirpur')
+person2.describe_user()
+
+if person1 == person2:
+    print("They are the same person")
+else:
+    print("They are different peesone")
