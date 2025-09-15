@@ -1,0 +1,20 @@
+
+
+
+from typing import List
+
+def reverseString(s: List[str]) -> None:
+    """
+    Do not return anything, modify s in-place instead.
+    """
+    left, right = 0, len(s) - 1
+    while left < right:
+        # Swap
+        s[left], s[right] = s[right], s[left]
+        left += 1
+        right -= 1
+
+
+# class Pen:
+#     def __init__(self, ):
+#         pass 
